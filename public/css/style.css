@@ -1,0 +1,279 @@
+/*public/css/style.css*/
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.et-hero-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: url('../images/f1-podium1.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-hero-tabs h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+
+.et-hero-tabs h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.8;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /*box la shadow*/
+    background: rgb(255, 0, 0); /*sch dr new tea oth*/
+    z-index: 10;
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000000;/*sch dr new te oth*/
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+}
+
+.et-hero-tab:hover {
+    color: white;
+    background: rgba(102, 177, 241, 0.8);
+    transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 0 2em;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.background-image-standings {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add a subtle shadow to improve visibility */
+    background-image: url('../images/standings.jpg');
+}
+
+.background-image-schedule {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add a subtle shadow to improve visibility */
+    background-image: url('../images/schedule-2024-F1-Calendar.png');
+}
+
+.background-image-drivers {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add a subtle shadow to improve visibility */
+    background-image: url('../images/drivers1.jpg');
+}
+
+.background-image-news {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add a subtle shadow to improve visibility */
+    background-image: url('../images/news2.jpg');
+}
+
+.background-image-teams {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add a subtle shadow to improve visibility */
+    background-image: url('../images/teams3.jpg');
+}
+
+.background-image-other {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add a subtle shadow to improve visibility */
+    background-image: url('../images/other1.avif');
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 70px; /* Added fixed height */
+    box-sizing: border-box; /* Include padding and border in the total height */
+}
+
+.logo a {
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    display: block;
+    color: #000000;/*hom racin new tea res*/
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(153, 151, 151, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.btn-register,
+.btn-subscribe {
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #fc0000;
+    color: #333;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.btn-register:hover,
+.btn-subscribe:hover {
+    background-color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .et-hero-tabs h1 {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .et-hero-tabs h3 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .et-hero-tab {
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+
+    .btn-register,
+    .btn-subscribe {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+    }
+
+    nav {
+        height: 60px; /* Adjust the height for smaller screens */
+    }
+}
+
+@media (min-width: 800px) {
+    .et-hero-tabs h1 {
+        font-size: 4rem;
+    }
+
+    .et-hero-tabs h3 {
+        font-size: 2rem;
+    }
+
+    .et-hero-tab {
+        font-size: 1rem;
+    }
+}
+/*white clr home pag stand sched driv new othe*/
+.et-main a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Update the color of links within et-main when they are visited */
+.et-main a:visited {
+    color: white;
+}
+
+/* Update the color of links within et-main when they are hovered */
+.et-main a:hover {
+    color: white;
+}
+
+/* Update the color of links within et-main when they are active (clicked) */
+.et-main a:active {
+    color: white;
+}
+

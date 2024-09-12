@@ -1,0 +1,163 @@
+/* standings.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars for the entire page */
+}
+
+h1 {
+    text-align: center;
+    color: #c1b8b8;
+    margin-top: 80px;
+}
+
+/* Apply the same styles to both #drivers and #standings */
+#standings, #drivers {
+    max-width: 800px;
+    height: 500px; /* Set a fixed height for the container */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+#standings::-webkit-scrollbar, #drivers::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+#standings p, #drivers p {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #555;
+}
+
+#standings p:last-child, #drivers p:last-child {
+    border-bottom: none;
+}
+
+#drivers div {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add a border between entries */
+    font-size: 16px;
+    color: #555;
+}
+
+#drivers div:last-child {
+    border-bottom: none; /* Remove the last border */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(85, 85, 85, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn-register,
+.btn-subscribe {
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #fc0000;
+    color: #333;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.btn-register:hover,
+.btn-subscribe:hover {
+    background-color: #ff0000;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .btn-register,
+    .btn-subscribe {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+    }
+
+    nav {
+        height: 60px;
+    }
+    
+    .nav-menu li a {
+        padding: 10px 10px;
+    }
+}

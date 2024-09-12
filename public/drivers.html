@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Adrenaline Axis - Drivers</title>
+  <link rel="stylesheet" href="css/standings.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="standings.mp4" type="video/mp4">
+  </video>
+
+  <!-- Hero -->
+  <section class="et-hero-tabs">
+    <nav>
+      <div class="logo">
+        <a href="#">F1 Adrenaline Axis</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Racing Info <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="standings.html">Standings</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="drivers.html">Drivers</a>
+          </div>
+        </li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Teams</a></li>
+        <li class="dropdown">
+          <a href="#">Resources <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Videos</a>
+            <a href="#">Blogs</a>
+            <a href="#">Merchandise</a>
+          </div>
+        </li>
+        <li><a href="#" class="btn-register">Register</a></li>
+        <li><a href="#" class="btn-subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <h1>Drivers
+    <select id="yearDropdown">
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+    </select>
+  </h1>
+  
+  <!-- Div to display drivers -->
+  <div id="drivers"></div>
+  
+  <script src="js/drivers.js"></script>
+</body>
+</html>
